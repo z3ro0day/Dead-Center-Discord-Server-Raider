@@ -1,89 +1,76 @@
-DISWEB Terminal Panel
+# Dead Center Raider
 
-A pure terminal menu-based tool for managing Discord webhooks and bots.
-Built for Linux (tested on Kali), but works on Windows too.
-
-------------------------------------------------------------------------
-
-✨ Features
-
--   ASCII Art Banner + Colored Menus
--   Webhook Management
-    -   Add / Update webhooks
-    -   Test webhook connection
-    -   Delete saved webhooks
-    -   List saved webhooks
-    -   Export webhooks (webhooks_backup.json)
-    -   Import webhooks
--   Send Messages
-    -   Send to a single saved webhook (pick by number)
-    -   Send to ALL saved webhooks in parallel
-    -   Send to custom (temporary) webhooks in parallel
-    -   Optional delay between messages
--   Logs
-    -   Stores sent message IDs per webhook
-    -   View logs from JSON
--   Bot Management
-    -   Send message to channel
-    -   Delete last message
-    -   Delete all messages
-    -   Delete channel
-    -   Ban user
-    -   Kick user
+Dead Center Raider is a **Python terminal toolkit** for managing and
+sending messages through Discord webhooks and bots.\
+It provides an interactive menu-driven interface with features for both
+developers and administrators.
 
 ------------------------------------------------------------------------
 
-📦 Requirements
+## 🚀 Features
 
--   Python 3.8+
--   requests library
-
-Install dependencies: pip install requests
-
-------------------------------------------------------------------------
-
-▶️ Usage
-
-Run the script:
-
-    python3 disweb_terminal.py
-
-On first run, it will auto-create these files: - webhooks.json – saved
-webhooks
-- logs.json – webhook message logs
-- bot_logs.json – bot message logs
-- settings.json – basic settings
+-   **Webhook Management**
+    -   Add, update, test, delete, list, import/export webhooks\
+-   **Message Sending**
+    -   Send to a single webhook\
+    -   Broadcast to all saved webhooks in parallel\
+    -   Send to temporary/custom webhooks\
+-   **Logs**
+    -   Track sent messages in JSON logs\
+-   **Bot Management**
+    -   Send messages as a bot\
+    -   Delete messages (last or all)\
+    -   Delete channels\
+    -   Ban or kick users
 
 ------------------------------------------------------------------------
 
-📂 File Overview
+## ⚙️ Requirements
 
--   disweb_terminal.py – the main program
--   webhooks.json – stores your saved webhooks
--   webhooks_backup.json – used for export/import
--   logs.json – stores webhook message IDs
--   bot_logs.json – stores bot message IDs
+-   Python **3.7+**
 
-------------------------------------------------------------------------
+-   Install dependencies with:
 
-⚡ Example
-
-Add a Webhook: 1. Open Manage Webhooks 2. Choose Add/Update 3. Enter: -
-Webhook name (local label) - Webhook URL - Username to display
-
-Send to All Webhooks: 1. Open Send Messages 2. Choose Send to ALL Saved
-Webhooks (parallel) 3. Enter message and options
+    ``` bash
+    pip install requests
+    ```
 
 ------------------------------------------------------------------------
 
-❗ Notes
+## ▶️ Usage
 
--   This script is for personal/admin use only.
--   Be careful with spamming – Discord may rate-limit requests.
--   Default delay is 0s (fastest possible). Increase if needed.
+1.  Clone or download this repository.\
+
+2.  Run the script:
+
+    ``` bash
+    python Dead\ Center\ Raider.py
+    ```
+
+3.  Follow the interactive menu options.
 
 ------------------------------------------------------------------------
 
-✅ License
+## 📂 Files Created
 
-Free to use and modify.
+-   `webhooks.json` → Stores saved webhooks\
+-   `webhooks_backup.json` → Backup of saved webhooks\
+-   `logs.json` → Webhook message logs\
+-   `bot_logs.json` → Bot action logs\
+-   `settings.json` → Script settings
+
+------------------------------------------------------------------------
+
+## ⚠️ Disclaimer
+
+This tool interacts with Discord webhooks and bots.\
+- Use responsibly and **only on servers/bots you own or have permission
+to manage**.\
+- Misuse (such as spamming or raiding) may violate Discord's Terms of
+Service.
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Credits
+
+README generated with ❤️ by **ChatGPT**
