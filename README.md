@@ -1,4 +1,4 @@
-ReadMe Made by AI h
+ReadMe Made by AI 
 # Dead Center Raider
 
 Dead Center Raider is a **Python terminal toolkit** for managing and
