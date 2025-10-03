@@ -75,3 +75,6 @@ Service.
 ## 👨‍💻 Credits
 
 README generated with ❤️ by **ChatGPT**
+## BTC Address bc1q7evvm5gx5xrh3ssfxh0htwzr49tx64cwzl6vz0
+
+## XMR 88fGveAuw7DdMumere62oMhXGWqt56NMq9GfMStB9eP8fWcXFKVNPXuiQTHJdtRTqvExLhX5Xqw14MJM4pQmD1x2SApNp3g
